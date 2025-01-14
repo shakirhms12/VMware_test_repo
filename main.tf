@@ -3,7 +3,7 @@ provider "vsphere" {
   password             = var.vsphere_password
   vsphere_server       = var.vsphere_server
   allow_unverified_ssl = true
-  api_timeout          = 10
+  api_timeout          = 30
 }
 
 data "vsphere_datacenter" "datacenter" {
