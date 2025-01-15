@@ -23,7 +23,7 @@ variable "datacenter" {
 }
 
 variable "datastore" {
-    default = "datastore1 (1)"
+    default = "Huwaei's"
 }
 
 variable "IP" {
@@ -31,10 +31,11 @@ variable "IP" {
 }
 
 variable "pool" {
-    default = "resource-pool"
+    # default = "resource-pool"
+    default = "192.168.2.106/Resources"
   
 }
 
 variable "guest_id" {
-  default = "otherLinux64Guest"
+  default = "ubuntu64Guest"
 }
