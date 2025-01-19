@@ -11,7 +11,7 @@ variable "vsphere_password" {
 }
 
 variable "vsphere_server" {
-    default = "192.168.2.30"
+  default = "192.168.2.30"
 }
 
 variable "network" {
@@ -23,7 +23,7 @@ variable "datacenter" {
 }
 
 variable "datastore" {
-    default = "Huwaei's"
+  default = "TLAB-FC-LUN02"
 }
 
 variable "IP" {
@@ -31,11 +31,18 @@ variable "IP" {
 }
 
 variable "pool" {
-    # default = "resource-pool"
-    default = "192.168.2.106/Resources"
+  # default = "resource-pool"
+  default = "192.168.2.60/Resources"
   
 }
 
-variable "guest_id" {
-  default = "ubuntu64Guest"
+variable "disk_count" {
+  description = "Enter the number of disk you want"
+  default = 1
+}
+
+variable "disk_sizes" {
+  description = "List of disk sizes in GB in List"
+  type        = list(number)
+  default = [ 16 ]
 }

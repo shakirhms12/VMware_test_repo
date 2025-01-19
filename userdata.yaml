@@ -1,0 +1,10 @@
+#cloud-config
+users:
+  - name: test
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+ 
+chpasswd:
+  list: |
+    test:test
+  expire: false
